@@ -1,7 +1,7 @@
 Airbnb listings in San Diego, CA, USA
 ================
 
-<img src="img/shutterstock_187918175.jpg" style="display: block; margin: auto;" />
+<img src="img/shutterstock_187918175.jpg" width="1500" style="display: block; margin: auto;" />
 
 #### attribution
 
@@ -148,14 +148,35 @@ together the text and code detailed in the .Rmd document. After
 knitting, we should see changes to both the source .Rmd and resulting
 output file reflected in the Git pane of Rstudio (top-right corner).
 
-*Git Diff and Commit*
+*Git: staging*
+
+With RStudio, we interact with Git and GitHub through the Git pane
+(usually the top-right panel). An empty pane indicates that changes have
+not been made (at least not saved), and that the current state of the
+project is unchanged since the previous commit. When we have saved a
+change(s) to a file(s) in our version-controlled repository, those files
+are then listed in the Git pane. In the status column: `M` indicates a
+modified file; `?` a new file that has been added but is not yet staged
+or tracked; and `A` a new file that has been added and staged. We can
+stage files (i.e., select files to include with a commit) by toggling
+the corresponding staged checkbox.
+
+<img src="img/rstudio-git-stage.png" width="723" />
+
+*Git: viewing changes*
 
 In the Git pane, click on the .Rmd or output to file select it then
 click on **Diff**. This shows you the *diff*erence between the last
 committed state of the document and its current state that includes your
-changes. When ready, we can commit a snapshot of the project state by
-staging the files we want to commit (with the stage toggle option),
-adding a **Commit message** box, and pressing **Commit**.
+changes.
+
+*Git: commiting*
+
+When ready, we can commit a snapshot of the project state after staging
+the files we want to commit (with the stage toggle option), adding a
+**Commit message** box, and pressing **Commit**.
+
+<img src="img/rstudio-commit.png" width="994" />
 
 Committing after every change is not necessary and, in fact, would
 become cumbersome and result in an abundance of potentially trivial
@@ -383,11 +404,11 @@ file extension will be `.md`.
 
 Edit the code Rmd, including whether to and at what threshold to filter
 data, based on your assessment of the data. Provide answers to questions
-1 and 2 based on your assessment.
+Q1 and Q2 based on your assessment.
 
 Final output should be:
 
-1.  Rmd with your final code and answers to questions 1 and 2.
+1.  Rmd with your final code and responses to questions Q1 and Q2.
 2.  the knitted document (will knit to filetype md), which should
     feature the table and plot you produced documenting the five
     neighborhoods with the highest rental rates.

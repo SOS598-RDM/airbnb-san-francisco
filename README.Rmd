@@ -118,9 +118,25 @@ Open the R Markdown (.Rmd) file in your project then change the author name to y
 
 Knitting produces another document, the type of which corresponding to the `output:` we have defined in the YAML (e.g., html, PDF), that weaves together the text and code detailed in the .Rmd document. After knitting, we should see changes to both the source .Rmd and resulting output file reflected in the Git pane of Rstudio (top-right corner).
 
-*Git Diff and Commit*
+*Git: staging*
 
-In the Git pane, click on the .Rmd or output to file select it then click on **Diff**. This shows you the *diff*erence between the last committed state of the document and its current state that includes your changes. When ready, we can commit a snapshot of the project state by staging the files we want to commit (with the stage toggle option), adding a **Commit message** box, and pressing **Commit**.
+With RStudio, we interact with Git and GitHub through the Git pane (usually the top-right panel). An empty pane indicates that changes have not been made (at least not saved), and that the current state of the project is unchanged since the previous commit. When we have saved a change(s) to a file(s) in our version-controlled repository, those files are then listed in the Git pane. In the status column: `M` indicates a modified file; `?` a new file that has been added but is not yet staged or tracked; and `A` a new file that has been added and staged. We can stage files (i.e., select files to include with a commit) by toggling the corresponding staged checkbox.
+
+```{r git-stage, fig.margin = TRUE, echo = FALSE, fig.width=3}
+knitr::include_graphics("img/rstudio-git-stage.png")
+```
+
+*Git: viewing changes*
+
+In the Git pane, click on the .Rmd or output to file select it then click on **Diff**. This shows you the *diff*erence between the last committed state of the document and its current state that includes your changes. 
+
+*Git: commiting*
+
+When ready, we can commit a snapshot of the project state after staging the files we want to commit (with the stage toggle option), adding a **Commit message** box, and pressing **Commit**.
+
+```{r git-commit, fig.margin = TRUE, echo = FALSE, fig.width=3}
+knitr::include_graphics("img/rstudio-commit.png")
+```
 
 Committing after every change is not necessary and, in fact, would become cumbersome and result in an abundance of potentially trivial commits. Consider committing project snapshots that are meaningful to you for inspection, comparison, or restoration.
 
@@ -129,7 +145,6 @@ Committing after every change is not necessary and, in fact, would become cumber
 After making a commit, we have the option to push the project at that state to the project repository on GitHub. As with committing, you do not need to push with every project change or with every commit. Push as needed for appropriately backing up the project, recording significant changes, or facilitating collaborative work among others.
 
 In order to push your changes to GitHub, click **Push**. This will prompt a dialogue box where you first need to enter your GitHub user name, and your password. Jenny Bryan has well-documented instructions for setting up Git so that you do not need to enter your name and password for every GitHub action - [explore](https://happygitwithr.com/push-pull-github.html#am-i-really-going-to-type-github-username-and-password-on-each-push) these at your convenience but the user name and password approach will work in the meantime.
-
 
 ---
 
@@ -278,10 +293,10 @@ Read the instructions for your assignment in the README of your assignment repos
 
 Before doing any work, open the Rmd and Knit it to make sure that it compiles without errors. The output will have the same file name but the file extension will be `.md`.
 
-Edit the code Rmd, including whether to and at what threshold to filter data, based on your assessment of the data. Provide answers to questions 1 and 2 based on your assessment.
+Edit the code Rmd, including whether to and at what threshold to filter data, based on your assessment of the data. Provide answers to questions Q1 and Q2 based on your assessment.
 
 Final output should be:
 
-1. Rmd with your final code and answers to questions 1 and 2.
+1. Rmd with your final code and responses to questions Q1 and Q2.
 2. the knitted document (will knit to filetype md), which should feature the table and plot you produced documenting the five neighborhoods with the highest rental rates.
 3. push the finished project to your assignment repository on GitHub.
