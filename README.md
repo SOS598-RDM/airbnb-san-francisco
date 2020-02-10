@@ -1,7 +1,7 @@
 Airbnb listings in San Diego, CA, USA
 ================
 
-<img src="img/shutterstock_187918175.jpg" style="display: block; margin: auto;" />
+<img src="img/shutterstock_187918175.jpg" width="1500" style="display: block; margin: auto;" />
 
 #### attribution
 
@@ -383,11 +383,11 @@ file extension will be `.md`.
 
 Edit the code Rmd, including whether to and at what threshold to filter
 data, based on your assessment of the data. Provide answers to questions
-1 and 2 based on your assessment.
+Q1 and Q2 based on your assessment.
 
 Final output should be:
 
-1.  Rmd with your final code and answers to questions 1 and 2.
+1.  Rmd with your final code and responses to questions Q1 and Q2.
 2.  the knitted document (will knit to filetype md), which should
     feature the table and plot you produced documenting the five
     neighborhoods with the highest rental rates.

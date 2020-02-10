@@ -278,10 +278,10 @@ Read the instructions for your assignment in the README of your assignment repos
 
 Before doing any work, open the Rmd and Knit it to make sure that it compiles without errors. The output will have the same file name but the file extension will be `.md`.
 
-Edit the code Rmd, including whether to and at what threshold to filter data, based on your assessment of the data. Provide answers to questions 1 and 2 based on your assessment.
+Edit the code Rmd, including whether to and at what threshold to filter data, based on your assessment of the data. Provide answers to questions Q1 and Q2 based on your assessment.
 
 Final output should be:
 
-1. Rmd with your final code and answers to questions 1 and 2.
+1. Rmd with your final code and responses to questions Q1 and Q2.
 2. the knitted document (will knit to filetype md), which should feature the table and plot you produced documenting the five neighborhoods with the highest rental rates.
 3. push the finished project to your assignment repository on GitHub.
