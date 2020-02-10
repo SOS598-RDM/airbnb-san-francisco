@@ -395,12 +395,12 @@ listings %>%
 #### project requirements
 
 Read the instructions for your assignment in the README of your
-assignment repository. Complete your work in the R Markdown document
-(Rmd) included in your assignment repository.
+assignment repository. Complete your work in the R markdown document
+(Rmd) included in the `R` directory of your assignment repository.
 
-Before doing any work, open the Rmd and Knit it to make sure that it
-compiles without errors. The output will have the same file name but the
-file extension will be `.md`.
+Before doing any work, first open the Rmd and Knit it to make sure that
+it compiles without errors. The output will have the same file name but
+the file extension will be `.md`.
 
 Edit the code Rmd, including whether to and at what threshold to filter
 data, based on your assessment of the data. Provide answers to questions
