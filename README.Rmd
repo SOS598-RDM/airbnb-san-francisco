@@ -1,5 +1,5 @@
 ---
-title: "Airbnb listings in San Diego, CA, USA"
+title: "Airbnb listings in San Francisco, CA, USA"
 output: github_document
 ---
 
@@ -8,7 +8,7 @@ library(emo)
 ```
 
 ```{r skyine, echo = FALSE, fig.align='center'}
-knitr::include_graphics("img/shutterstock_187918175.jpg")
+knitr::include_graphics("img/shutterstock_479816032.jpg")
 ```
 
 #### attribution
@@ -18,7 +18,7 @@ knitr::include_graphics("img/shutterstock_187918175.jpg")
 
 #### background
 
-Recent developments in San Diego, CA, USA regarding the growth of Airbnb and its impact on the housing, rental, and hospitality markets require a better understanding of the Airbnb listings. Using data provided by Airbnb, we can explore how Airbnb rentals vary by neighborhood among other relationships.
+Recent developments in San Francisco, CA, USA regarding the growth of Airbnb and its impact on the housing, rental, and hospitality markets require a better understanding of the Airbnb listings. Using data provided by Airbnb, we can explore how Airbnb rentals vary by neighborhood among other relationships.
 
 #### learning goals
 
@@ -105,7 +105,7 @@ The top portion of a R Markdown file (between the three dashed lines) is called 
 
 ```{yaml}
 ---
-title: "Airbnb listings in San Diego, CA, USA"
+title: "Airbnb listings in San Francisco, CA, USA"
 author: ""
 date: ""
 output: github_document
@@ -166,10 +166,10 @@ We will use data provided by [Airbnb](http://insideairbnb.com/get-the-data.html)
 
 - Note that we are not downloading the data to a file but rather reading them directly into our R environment. For a reproducible workflow, we would probably want to download and save a copy of these data in case they change or become unavailable but we merely refer to Airbnb for this one-time assignment.
 - Note the `stringsAsFactors = FALSE` argument we pass to the read.csv function to prevent it from converting any data columns that contain strings to factors.
-- Note that this URL is specific to San Diego, CA but your assignment will focus on a different location
+- Note that this URL is specific to San Francisco, CA
 
 ```{r data-import, eval=FALSE}
-listings <- read.csv(url('http://data.insideairbnb.com/united-states/ca/san-diego/2019-11-21/visualisations/listings.csv'),
+listings <- read.csv(url('http://data.insideairbnb.com/united-states/ca/san-francisco/2019-12-04/visualisations/listings.csv'),
                      stringsAsFactors = FALSE)
 ```
 

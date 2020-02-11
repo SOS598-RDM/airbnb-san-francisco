@@ -1,7 +1,7 @@
-Airbnb listings in San Diego, CA, USA
+Airbnb listings in San Francisco, CA, USA
 ================
 
-<img src="img/shutterstock_187918175.jpg" width="1500" style="display: block; margin: auto;" />
+<img src="img/shutterstock_479816032.jpg" width="1024" style="display: block; margin: auto;" />
 
 #### attribution
 
@@ -14,11 +14,11 @@ Airbnb listings in San Diego, CA, USA
 
 #### background
 
-Recent developments in San Diego, CA, USA regarding the growth of Airbnb
-and its impact on the housing, rental, and hospitality markets require a
-better understanding of the Airbnb listings. Using data provided by
-Airbnb, we can explore how Airbnb rentals vary by neighborhood among
-other relationships.
+Recent developments in San Francisco, CA, USA regarding the growth of
+Airbnb and its impact on the housing, rental, and hospitality markets
+require a better understanding of the Airbnb listings. Using data
+provided by Airbnb, we can explore how Airbnb rentals vary by
+neighborhood among other relationships.
 
 #### learning goals
 
@@ -125,7 +125,7 @@ meta information about the document.
 
 ``` yaml
 ---
-title: "Airbnb listings in San Diego, CA, USA"
+title: "Airbnb listings in San Francisco, CA, USA"
 author: ""
 date: ""
 output: github_document
@@ -233,14 +233,13 @@ from Airbnb.
   - Note the `stringsAsFactors = FALSE` argument we pass to the read.csv
     function to prevent it from converting any data columns that contain
     strings to factors.
-  - Note that this URL is specific to San Diego, CA but your assignment
-    will focus on a different
-location
+  - Note that this URL is specific to San Francisco,
+CA
 
 <!-- end list -->
 
 ``` r
-listings <- read.csv(url('http://data.insideairbnb.com/united-states/ca/san-diego/2019-11-21/visualisations/listings.csv'),
+listings <- read.csv(url('http://data.insideairbnb.com/united-states/ca/san-francisco/2019-12-04/visualisations/listings.csv'),
                      stringsAsFactors = FALSE)
 ```
 

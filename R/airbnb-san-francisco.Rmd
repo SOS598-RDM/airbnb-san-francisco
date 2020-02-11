@@ -1,5 +1,5 @@
 ---
-title: "Airbnb listings in San Diego, CA, USA"
+title: "Airbnb listings in San Francisco, CA, USA"
 author: ""
 date: ""
 output: github_document
@@ -10,7 +10,7 @@ library(package = tidyverse)
 ```
 
 ```{r data-import, echo=FALSE}
-listings <- read.csv(url('http://data.insideairbnb.com/united-states/ca/san-diego/2019-11-21/visualisations/listings.csv'),
+listings <- read.csv(url('http://data.insideairbnb.com/united-states/ca/san-francisco/2019-12-04/visualisations/listings.csv'),
                      stringsAsFactors = FALSE)
 ```
 
@@ -87,7 +87,7 @@ listings %>%
   # add error bars based on the standard errors we calculated earlier
   geom_errorbar(aes(ymin = priceMean - priceSE, ymax = priceMean + priceSE), width = 0.5) +
   # add a descriptive title
-  ggtitle(label = "Airbnb rentals in the San Diego, CA area (five most expensive neighbourhoods)") +
+  ggtitle(label = "Airbnb rentals in the San Francisco, CA area (five most expensive neighbourhoods)") +
   # add a meaningful y-axis lable
   ylab("mean price per night")
 ```
