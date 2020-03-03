@@ -1,10 +1,12 @@
-# assignment: analysis of Airbnb data from the City of San Francisco
+## assignment: analysis of Airbnb data from the City of San Francisco
+
+### details
 
 Complete the analysis of Airbnb data in the repository assigned to you. Refer to
 the instructions and analysis of San Diego Airbnb data for guidance
 [link](https://github.com/SOS598-RDM/airbnb-san-diego).
 
-grading criteria:
+### grading criteria:
 
 1. demonstrated interaction with R code by altering threshold(s) of rental rates
 to exclude (excluding data is not required, merely that you have explored it)
