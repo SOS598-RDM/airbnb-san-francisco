@@ -1,4 +1,4 @@
-# assignment
+# assignment: analysis of Airbnb data from the City of San Francisco
 
 Complete the analysis of Airbnb data in the repository assigned to you. Refer to
 the instructions and analysis of San Diego Airbnb data for guidance
@@ -12,5 +12,5 @@ to exclude (excluding data is not required, merely that you have explored it)
 3. knit Rmd to md
 4. push output of knit (md and all supporting files) to GitHub
 
-Be sure to view the output on GitHub to be sure that the output is as you expect
-(text, figures, and code are displayed).
+View the output on GitHub to be sure that the output is as you expect
+(e.g., text, figures, and code are displayed without broken links).
